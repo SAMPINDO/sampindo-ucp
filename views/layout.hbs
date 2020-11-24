@@ -1,0 +1,222 @@
+
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="UCP For SAMPINDO Community">
+  <meta name="author" content="Athallah Dzaki">
+  <meta property="og:site_name" content="UCP SAMPINDO" >
+  <link href="https://freerestapi.herokuapp.com/admin/img/logo/icon.ico" rel="icon">
+  <title>{{ title }}</title>
+  <link href='https://freerestapi.herokuapp.com/admin/vendor/fontawesome-free/css/all.min.css' rel="stylesheet" type="text/css">
+  <link href='https://freerestapi.herokuapp.com/admin/vendor/bootstrap/css/bootstrap.min.css' rel="stylesheet" type="text/css">
+  <link href='https://freerestapi.herokuapp.com/admin/css/ruang-admin.css' rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+  
+  <style>
+    pre {
+     white-space: pre-wrap;       /* css-3 */
+     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap;      /* Opera 4-6 */
+     white-space: -o-pre-wrap;    /* Opera 7 */
+     word-wrap: break-word;       /* Internet Explorer 5.5+ */
+   }
+   preggg { 
+	margin: 15px; padding: 15px; 
+	color: #aaa; background-color: #e5e5e5;
+	white-space: pre; text-shadow: 0 0px 0 #000;
+	border-radius: 10px; border-bottom: 1px solid #555;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.4) inset, 0 0 20px rgba(0,0,0,0.2) inset;
+	font: 16px/24px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+        white-space: pre-wrap;       /* css-3 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */                                                          >
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+   }
+  </style>
+</head>
+
+<body id="page-top">
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+        <div class="sidebar-brand-text mx-3">SAMPINDO UCP</div>
+      </a>
+      <hr class="sidebar-divider my-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Beranda</span></a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="sidebar-heading">
+        Features
+      </div>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#base"
+          aria-expanded="true" aria-controls="base">
+          <i class="fas fa-users"></i>
+          <span>Account Setting</span>
+        </a>
+        <div id="base" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Account Settings</h6>
+            <a class="collapse-item" href="/acc/cn">Perubahan Nama</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/auction">
+          <i class="fa fa-gavel"></i>
+          <span>Lelang</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>About</span>
+        </a>
+      </li>
+      <hr class="sidebar-divider">
+      <div class="version" id="version-ruangadmin"></div>
+    </ul>
+    <!-- Sidebar -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="JamNav" role="button" data-toggle="modal"
+                aria-haspopup="true" aria-expanded="false">
+	     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="#modalCenter"><span id="Jam">00:00:00</span></button>
+              </a>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <span class="badge badge-danger badge-counter">2</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">November 15, 2020</div>
+                    Template Done
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">November 15, 2020</div>
+                    Report if there are errors on this website to Admin
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <span class="badge badge-warning badge-counter">1</span>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://freerestapi.herokuapp.com/admin/img/man.png" style="max-width: 60px" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="Font-weight-bold">
+                    <div class="text-truncate">Happy Using Our API!.</div>
+                    <div class="small text-gray-500">Admin � 5m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="https://freerestapi.herokuapp.com/admin/img/boy.png" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">{{username}}</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+                </a>
+                <div class="dropdown-divider"></div>
+	     <form action="/loggout" method="POST">
+                <a onclick="this.parentNode.submit()" class="dropdown-item" href="#">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+	     </form>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->
+
+    {{{body}}}
+
+       <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>copyright &copy; 2019 - 2020 <a href="http://sampindo.com">sampindo.com</a> - All rights reserved.
+            </span>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <script src="https://freerestapi.herokuapp.com/admin/vendor/jquery/jquery.min.js"></script>
+  <script src="https://freerestapi.herokuapp.com/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://freerestapi.herokuapp.com/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://freerestapi.herokuapp.com/admin/js/ruang-admin.js"></script>
+  <script src="https://freerestapi.herokuapp.com/admin/vendor/chart.js/Chart.min.js"></script>
+  <script src="https://freerestapi.herokuapp.com/admin/js/demo/chart-area-demo.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</body>
+
+</html>
